@@ -13,7 +13,7 @@
 
         /* 네비게이션 바 */
         .navbar { display: flex; justify-content: space-between; align-items: center; padding: 20px 10%; background: #fff; border-bottom: 1px solid #eee; position: sticky; top: 0; z-index: 1000; }
-        .navbar .logo { font-size: 1.3-rem; font-weight: bold; color: #0f2c59; }
+        .navbar .logo { font-size: 1.3rem; font-weight: bold; color: #0f2c59; }
         .nav-links { display: flex; gap: 30px; }
         .nav-links a:hover { color: #0f2c59; font-weight: bold; }
 
@@ -44,9 +44,18 @@
         .contact-form { max-width: 500px; margin: 0 auto; text-align: left; }
         .form-group { margin-bottom: 20px; }
         .form-group label { display: block; margin-bottom: 8px; font-weight: bold; }
-        .form-group input, .form-group textarea, .form-group select { width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 4px; font-size: 1px; }
+        .form-group input, .form-group textarea, .form-group select { width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 4px; font-size: 1rem; }
         .submit-btn { width: 100%; padding: 15px; background: #0f2c59; color: #fff; border: none; border-radius: 4px; font-size: 1.1rem; font-weight: bold; cursor: pointer; transition: background 0.3s; }
         .submit-btn:hover { background: #1d3e6d; }
+
+        /* 커뮤니티 연동 섹션 (새로 추가됨) */
+        .community { background: #f4f6f9; padding: 60px 10%; }
+        .community-container { display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; margin-top: 10px; }
+        .btn-sns { display: inline-flex; align-items: center; justify-content: center; width: 260px; padding: 18px 0; border-radius: 50px; font-size: 1.1rem; font-weight: bold; color: #fff; transition: all 0.3s; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
+        .btn-sns:hover { transform: translateY(-3px); box-shadow: 0 6px 15px rgba(0,0,0,0.15); }
+        .btn-blog { background-color: #03c75a; } /* 네이버 블로그 초록색 */
+        .btn-cafe { background-color: #01c73c; background: linear-gradient(135deg, #01c73c, #1ec800); } /* 네이버 카페 초록색 계열 */
+        .btn-sns span { margin-right: 8px; font-size: 1.2rem; }
 
         /* 푸터 섹션 */
         footer { background: #222; color: #bbb; padding: 40px 10%; font-size: 0.9rem; border-top: 1px solid #333; }
@@ -129,6 +138,21 @@
                 </div>
                 <button type="submit" class="submit-btn">제출하기</button>
             </form>
+        </div>
+    </section>
+
+    <!-- 커뮤니티 연동 섹션 -->
+    <section class="community">
+        <h2 class="section-title">공식 커뮤니티</h2>
+        <p style="color: #666; margin-bottom: 30px;">부동산스쿨이 전하는 최신 부동산 트렌드와 유익한 정보를 만나보세요.</p>
+        <div class="community-container">
+            <!-- target="_blank"는 새창 열기 옵션입니다 -->
+            <a href="[블로그 주소]" target="_blank" class="btn-sns btn-blog">
+                <span>📝</span> 공식 블로그 바로가기
+            </a>
+            <a href="[카페 주소]" target="_blank" class="btn-sns btn-cafe">
+                <span>☕</span> 공식 카페 바로가기
+            </a>
         </div>
     </section>
 
